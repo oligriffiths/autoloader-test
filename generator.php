@@ -8,6 +8,8 @@
 
 @mkdir('app');
 
+exec('rm -rf app/Test*');
+
 $max = (int) (isset($argv[1]) ? $argv[1] : 10000);
 
 for($i = 0; $i < $max; $i++){
