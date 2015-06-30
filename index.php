@@ -8,8 +8,10 @@
 
 require 'vendor/autoload.php';
 
+$max = (int) (isset($argv[1]) ? $argv[1] : 10000);
+
 $time = microtime(1);
-for($i = 0; $i < 10000; $i++){
+for($i = 0; $i < $max; $i++){
 
     $class = "App\\Test$i";
 
